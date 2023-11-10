@@ -37,6 +37,8 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: TS compile
+        run: npx tsc
       - name: Build
         run: npm run build
 
